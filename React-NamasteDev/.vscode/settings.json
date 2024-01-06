@@ -1,0 +1,81 @@
+{
+  "liveServer.settings.port": 5501,
+  "editor.wordWrap": "on",
+  "editor.scrollBeyondLastLine": false,
+  "editor.minimap.enabled": true,
+  "editor.minmap.maxcolumn": 25,
+  "editor.minimap.side": "right",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.dragAndDrop": true,
+  "editor.detectIndentation": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "trailing",
+  "editor.minimap.scale": 1,
+  "editor.linkedEditing": true,
+  "editor.fontSize": 12,
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "extensions.autoUpdate": true,
+  "extensions.ignoreRecommendations": true,
+  "explorer.compactFolders": false,
+  "css.lint.compatibleVendorPrefixes": "warning",
+  "css.lint.duplicateProperties": "error",
+  "css.lint.float": "error",
+  "css.lint.idSelector": "warning",
+  "css.lint.important": "warning",
+  "css.lint.unknownVendorSpecificProperties": "warning",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "vs-seti",
+  "workbench.enableExperiments": false,
+  "workbench.tree.indent": 15,
+  "workbench.view.alwaysShowHeaderActions": true,
+  "workbench.startupEditor": "welcomePage",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "breadcrumbs.enabled": true,
+  "problems.showCurrentInStatus": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "files.trimTrailingWhitespace": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "telemetry.telemetryLevel": "off",
+  "search.quickOpen.includeHistory": false,
+  "html.format.indentInnerHtml": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "angular.forceStrictTemplates": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "git.confirmSync": false,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "workbench.editor.empty.hint": "hidden",
+  "window.zoomLevel": 1
+}

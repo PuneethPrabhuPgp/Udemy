@@ -34,7 +34,7 @@
   "css.lint.important": "warning",
   "css.lint.unknownVendorSpecificProperties": "warning",
   "workbench.colorTheme": "Default Dark+",
-  "workbench.iconTheme": "vs-seti",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.enableExperiments": false,
   "workbench.tree.indent": 15,
   "workbench.view.alwaysShowHeaderActions": true,

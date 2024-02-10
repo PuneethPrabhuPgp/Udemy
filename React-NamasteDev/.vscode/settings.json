@@ -81,7 +81,7 @@
   "window.zoomLevel": 1,
   "prettier.printWidth": 100,
   "prettier.semi": true,
-  "prettier.singleQuote": true,
+  "prettier.singleQuote": false,
   "prettier.trailingComma": "none",
   "prettier.tabWidth": 2
 }

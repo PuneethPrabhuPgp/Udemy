@@ -1,0 +1,32 @@
+{
+  "name": "react-namastedev",
+  "version": "1.0.0",
+  "description": "this is namaste react by akshay saini",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PuneethPrabhuPgp/Udemy.git#main"
+  },
+  "keywords": [
+    "namaste-react"
+  ],
+  "author": "Puneeth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PuneethPrabhuPgp/Udemy/issues"
+  },
+  "homepage": "https://github.com/PuneethPrabhuPgp/Udemy/tree/main#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

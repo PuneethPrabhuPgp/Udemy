@@ -1,3 +1,30 @@
-#heading {
-  color: red;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.logo {
+  width: 75px;
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-items > ul > li {
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.res-card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.search {
+  padding: 10px;
 }

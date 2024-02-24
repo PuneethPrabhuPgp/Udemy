@@ -4,7 +4,7 @@ const resList = [
     id: 1,
     name: "Megahna Foods",
     cuisines: ["Biryani", "North Indian", "South Indian"],
-    avgRating: "4.4 stars",
+    avgRating: 4.4,
     minTime: "40 min",
     costForTwo: 40000
   },
@@ -12,7 +12,7 @@ const resList = [
     id: 2,
     name: "KFC",
     cuisines: ["Biryani", "North Indian", "South Indian"],
-    avgRating: "4.3 stars",
+    avgRating: 4.3,
     minTime: "50 min",
     costForTwo: 50000
   },
@@ -20,7 +20,7 @@ const resList = [
     id: 3,
     name: "Dominos",
     cuisines: ["Biryani", "North Indian", "South Indian"],
-    avgRating: "4.4 stars",
+    avgRating: 3.4,
     minTime: "40 min",
     costForTwo: 40000
   },
@@ -28,7 +28,7 @@ const resList = [
     id: 4,
     name: "Polar Bear",
     cuisines: ["Biryani", "North Indian", "South Indian"],
-    avgRating: "4.3 stars",
+    avgRating: 3.3,
     minTime: "50 min",
     costForTwo: 50000
   },
@@ -36,7 +36,7 @@ const resList = [
     id: 5,
     name: "Truffles",
     cuisines: ["Biryani", "North Indian", "South Indian"],
-    avgRating: "4.4 stars",
+    avgRating: 2.4,
     minTime: "40 min",
     costForTwo: 40000
   },
@@ -44,7 +44,7 @@ const resList = [
     id: 6,
     name: "Udupi Upahar",
     cuisines: ["Biryani", "North Indian", "South Indian"],
-    avgRating: "4.3 stars",
+    avgRating: 2.3,
     minTime: "50 min",
     costForTwo: 50000
   },
@@ -52,7 +52,7 @@ const resList = [
     id: 7,
     name: "Empire",
     cuisines: ["Biryani", "North Indian", "South Indian"],
-    avgRating: "4.4 stars",
+    avgRating: 1.4,
     minTime: "40 min",
     costForTwo: 40000
   },
@@ -60,7 +60,7 @@ const resList = [
     id: 8,
     name: "Mumbai Xpress",
     cuisines: ["Biryani", "North Indian", "South Indian"],
-    avgRating: "4.3 stars",
+    avgRating: 1.3,
     minTime: "50 min",
     costForTwo: 50000
   },
@@ -68,7 +68,7 @@ const resList = [
     id: 9,
     name: "Burger King",
     cuisines: ["Biryani", "North Indian", "South Indian"],
-    avgRating: "4.4 stars",
+    avgRating: 0.4,
     minTime: "40 min",
     costForTwo: 40000
   },
@@ -76,7 +76,7 @@ const resList = [
     id: 10,
     name: "Subway",
     cuisines: ["Biryani", "North Indian", "South Indian"],
-    avgRating: "4.3 stars",
+    avgRating: 0.3,
     minTime: "50 min",
     costForTwo: 50000
   }

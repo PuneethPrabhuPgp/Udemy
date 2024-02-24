@@ -1,11 +1,13 @@
+import Constants from "../utils/constants";
+
 const Header = () => {
   return (
     <div className="header">
       <div className="logo-container">
         <img
           className="logo"
-          alt ="food icon"
-          src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=food&sf="
+          alt="food icon"
+          src={ Constants.logo }
         />
       </div>
       <div className="nav-items">

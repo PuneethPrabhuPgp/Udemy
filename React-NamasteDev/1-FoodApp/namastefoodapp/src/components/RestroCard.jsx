@@ -1,3 +1,5 @@
+import Constants from "../utils/constants";
+
 const styleCard = {
   backgroundColor: "#f0f0f0"
 };
@@ -9,7 +11,7 @@ const RestroCard = ({ resData }) => {
       <h3>{ name }</h3>
       <img
         className="res-logo"
-        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/x4uyxvihmg8qa3pddkgf"
+        src={ Constants.RestroCards.meghanaFoods }
         alt="meghana foods"
       />
       <h4>{ cuisines.join(', ') }</h4>

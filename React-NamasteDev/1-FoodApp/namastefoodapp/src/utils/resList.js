@@ -6,7 +6,8 @@ const resList = [
     cuisines: ["Biryani", "North Indian", "South Indian"],
     avgRating: 4.4,
     minTime: "40 min",
-    costForTwo: 40000
+    costForTwo: 40000,
+    promoted: true
   },
   {
     id: 2,
@@ -14,7 +15,8 @@ const resList = [
     cuisines: ["Biryani", "North Indian", "South Indian"],
     avgRating: 4.3,
     minTime: "50 min",
-    costForTwo: 50000
+    costForTwo: 50000,
+    promoted: false
   },
   {
     id: 3,
@@ -22,7 +24,8 @@ const resList = [
     cuisines: ["Biryani", "North Indian", "South Indian"],
     avgRating: 3.4,
     minTime: "40 min",
-    costForTwo: 40000
+    costForTwo: 40000,
+    promoted: true
   },
   {
     id: 4,
@@ -30,7 +33,8 @@ const resList = [
     cuisines: ["Biryani", "North Indian", "South Indian"],
     avgRating: 3.3,
     minTime: "50 min",
-    costForTwo: 50000
+    costForTwo: 50000,
+    promoted: false
   },
   {
     id: 5,
@@ -38,7 +42,8 @@ const resList = [
     cuisines: ["Biryani", "North Indian", "South Indian"],
     avgRating: 2.4,
     minTime: "40 min",
-    costForTwo: 40000
+    costForTwo: 40000,
+    promoted: false
   },
   {
     id: 6,
@@ -46,7 +51,8 @@ const resList = [
     cuisines: ["Biryani", "North Indian", "South Indian"],
     avgRating: 2.3,
     minTime: "50 min",
-    costForTwo: 50000
+    costForTwo: 50000,
+    promoted: false
   },
   {
     id: 7,
@@ -54,7 +60,8 @@ const resList = [
     cuisines: ["Biryani", "North Indian", "South Indian"],
     avgRating: 1.4,
     minTime: "40 min",
-    costForTwo: 40000
+    costForTwo: 40000,
+    promoted: false
   },
   {
     id: 8,
@@ -62,7 +69,8 @@ const resList = [
     cuisines: ["Biryani", "North Indian", "South Indian"],
     avgRating: 1.3,
     minTime: "50 min",
-    costForTwo: 50000
+    costForTwo: 50000,
+    promoted: false
   },
   {
     id: 9,
@@ -70,7 +78,8 @@ const resList = [
     cuisines: ["Biryani", "North Indian", "South Indian"],
     avgRating: 0.4,
     minTime: "40 min",
-    costForTwo: 40000
+    costForTwo: 40000,
+    promoted: true
   },
   {
     id: 10,
@@ -78,7 +87,8 @@ const resList = [
     cuisines: ["Biryani", "North Indian", "South Indian"],
     avgRating: 0.3,
     minTime: "50 min",
-    costForTwo: 50000
+    costForTwo: 50000,
+    promoted: false
   }
 ];
 

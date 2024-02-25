@@ -1,16 +1,22 @@
 import RestroCard from "./RestroCard";
 
 import resList from "../utils/resList";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import withPromotedLabel from "./withPromotedLabel";
+import UserContext from "../utils/UserContext";
 
 
 const Body = () => {
   const [resLst, setResLst] = useState([]);
   const [filteredRes, setFilteredRes] = useState([]);
   const [searchText, setSearchText] = useState("");
+
+  const { loggedInUser, setUserInfo } = useContext(UserContext);
+
+  const RestaurantPromotedCard = withPromotedLabel(RestroCard);
 
   useEffect(() => {
     fetchData();
@@ -58,7 +64,7 @@ const Body = () => {
               setFilteredRes(serachedStuff);
           }}
             >Serach</button>
-        </div>
+          </div>
       </div>
       <div className="flex items-center">
         <button className="py-2 bg-red-200 rounded-xl" onClick={() => {
@@ -68,13 +74,24 @@ const Body = () => {
         }}>
           Top Rated Restaurants
         </button>
-        </div>
+      </div>
+        <div className="m-4 p-4 search flex items-center">
+          UserName:
+          <input className="border border-black p-2"
+            value = {loggedInUser}
+            onChange={(e) => {
+              setUserInfo(e.target.value);
+            }}
+          />
+          </div>
       </div>
       <div className="res-container flex flex-wrap">
         {
           filteredRes.map(item => {
             return <Link to={"/restaurants/" + item.id} key={item.id}>
-                <RestroCard resData={item} />
+              {
+                item.promoted ? <RestaurantPromotedCard resData={item}/> : <RestroCard resData={item} />
+              }
               </Link>
 
         })

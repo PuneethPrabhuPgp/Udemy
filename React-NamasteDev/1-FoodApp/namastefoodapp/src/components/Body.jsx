@@ -43,30 +43,34 @@ const Body = () => {
   }
 
   return resLst.length === 0 ? <Shimmer/> :  (
-    <div className="body">
-      <div className="filter">
-        <div className="search">
-          <input type="text" className="search-box" value={searchText}
+    <div className="body ">
+      <div className="flex">
+      <div className="filter flex">
+        <div className="search m-4 p-4 ">
+          <input type="text" className="border border-solid border-black" value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
           }}
           />
-          <button
+          <button className="px-4 py-2 bg-green-200 m-4 rounded-xl"
             onClick={() => {
               const serachedStuff = resList.filter(item => item.name.toUpperCase().includes(searchText.toUpperCase()));
               setFilteredRes(serachedStuff);
           }}
-          >Serach</button>
+            >Serach</button>
         </div>
-        <button className="filter-btn" onClick={() => {
+      </div>
+      <div className="flex items-center">
+        <button className="py-2 bg-red-200 rounded-xl" onClick={() => {
           const filterList = resLst.filter((restaurant) => restaurant.avgRating > 4);
           console.log(filterList);
            setResLst(filterList);
         }}>
           Top Rated Restaurants
         </button>
+        </div>
       </div>
-      <div className="res-container">
+      <div className="res-container flex flex-wrap">
         {
           filteredRes.map(item => {
             return <Link to={"/restaurants/" + item.id} key={item.id}>

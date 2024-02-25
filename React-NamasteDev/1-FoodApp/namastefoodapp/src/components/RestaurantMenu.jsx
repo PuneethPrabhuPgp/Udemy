@@ -1,29 +1,14 @@
-import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import resList from "../utils/resList";
 import Constants from "../utils/constants";
 import { useParams } from "react-router-dom";
+import useResturantMenu from "../utils/useRestuarantMenu";
 
 const RestaurantMenu = () => {
-  const [resInfo, setResInfo] = useState(null);
-   const [menuInfo, setMenuInfo] = useState(null);
+
   const { resId } = useParams();
 
-  useEffect(() => {
-    fetchMenu().then((response) => {
-      setResInfo(response);
-      var filterecord = response.filter(x => x.id === parseInt(resId));
-      setMenuInfo(filterecord);
-    });
-  }, [resId]);
-
-  const fetchMenu = () => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(resList);
-      }, 2000);
-    });
-  }
+  const menuInfo = useResturantMenu(resId);
 
   if (menuInfo === null) {
     console.log('null');

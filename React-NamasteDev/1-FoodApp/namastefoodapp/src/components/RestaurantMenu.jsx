@@ -16,14 +16,14 @@ const RestaurantMenu = () => {
     return <Shimmer />;
   }
 
-  const { id, name, cuisines } = menuInfo[0];
+  const { name} = menuInfo[0];
 
   const categories = ["Recommended","Newly Added", "Very Good"];
 
   return (
     <div className="text-center">
       <h1 className="font-bold my-10 text-2xl">{name}</h1>
-      <h3 className="text-black text-slate-600 text-lg my-10">Menu</h3>
+      <h3 className=" text-slate-600 text-lg my-10">Menu</h3>
       {
         categories.map((category, index) =>
           //Controlled component

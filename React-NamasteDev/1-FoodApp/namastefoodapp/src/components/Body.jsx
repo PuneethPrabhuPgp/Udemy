@@ -3,6 +3,7 @@ import RestroCard from "./RestroCard";
 import resList from "../utils/resList";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 
 const Body = () => {
@@ -60,7 +61,10 @@ const Body = () => {
       <div className="res-container">
         {
           filteredRes.map(item => {
-          return <RestroCard key={item.id} resData={item}/>
+            return <Link to={"/restaurants/" + item.id} key={item.id}>
+                <RestroCard resData={item} />
+              </Link>
+
         })
       }
       </div>

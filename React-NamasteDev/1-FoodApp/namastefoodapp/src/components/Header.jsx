@@ -14,7 +14,7 @@ const Header = () => {
 
   //subsribing to the store using our Selector
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  //console.log(cartItems);
 
   return (
     <div className="flex justify-between bg-pink-400 shadow-lg mb-2">

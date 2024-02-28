@@ -53,7 +53,8 @@ const Body = () => {
       <div className="flex">
       <div className="filter flex">
         <div className="search m-4 p-4 ">
-          <input type="text" className="border border-solid border-black" value={searchText}
+            <input type="text" className="border border-solid border-black" value={searchText}
+              data-testid="serachInput"
             onChange={(e) => {
               setSearchText(e.target.value);
           }}
@@ -63,7 +64,7 @@ const Body = () => {
               const serachedStuff = resList.filter(item => item.name.toUpperCase().includes(searchText.toUpperCase()));
               setFilteredRes(serachedStuff);
           }}
-            >Serach</button>
+            >Search</button>
           </div>
       </div>
       <div className="flex items-center">

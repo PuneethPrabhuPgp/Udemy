@@ -7,9 +7,9 @@ import {
 	updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { Background, PHOTO_URL } from "../utils/constants";
 
 const Login = () => {
 	const [isSignInForm, setIsSignInForm] = useState(true);
@@ -17,7 +17,6 @@ const Login = () => {
 	const password = useRef(null);
 	const fullName = useRef(null);
 	const [errorMessage, setErrorMessage] = useState(null);
-	const navigate = useNavigate();
 	const dispatch = useDispatch();
 
 	const toogleSignInForm = () => {
@@ -41,14 +40,13 @@ const Login = () => {
 					const user = userCredential.user;
 					updateProfile(auth.currentUser, {
 						displayName: fullName.current.value,
-						photoURL: "https://example.com/jane-q-user/profile.jpg",
+						photoURL: PHOTO_URL,
 					})
 						.then(() => {
 							const { uid, email, displayName, photoURL } = auth.currentUser;
 							dispatch(
 								addUser({ uid: uid, email: email, displayName: displayName, photoURL: photoURL }),
 							);
-							navigate("/browse");
 						})
 						.catch((error) => {
 							setErrorMessage(error.code + ":" + error.errorMessage);
@@ -65,7 +63,6 @@ const Login = () => {
 				.then((userCredential) => {
 					// Signed in
 					const user = userCredential.user;
-					navigate("/browse");
 				})
 				.catch((error) => {
 					const errorCode = error.code;
@@ -80,7 +77,7 @@ const Login = () => {
 			<Header />
 			<div className="absolute">
 				<img
-					src="https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/94eb5ad7-10d8-4cca-bf45-ac52e0a052c0/IN-en-20240226-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
+					src={Background}
 					alt="background"
 				/>
 			</div>

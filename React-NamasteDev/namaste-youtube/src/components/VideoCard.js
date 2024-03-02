@@ -20,4 +20,13 @@ const VideoCard = ({ info }) => {
 	);
 };
 
+//Higher order function
+export const RedBorderdVideoCard = ({ info }) => {
+	return (
+		<div className="p-1 m-1 border-red-900 border">
+			<VideoCard info={info} />
+		</div>
+	);
+};
+
 export default VideoCard;
